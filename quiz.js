@@ -77,12 +77,12 @@ function selectAnswer(event) {
 
     if (correct) {
         score++;
-        selectedButton.style.backgroundColor = "light green";
+        selectedButton.style.backgroundColor = "#95fe74";
     } else {
-        selectedButton.style.backgroundColor = "light red";
+        selectedButton.style.backgroundColor = "#ff6464";
         // Highlight correct answer
         questions[questionIndex].answers.forEach((answer, i) => {
-            if (answer.correct) optionButtons[i].style.backgroundColor = "light green";
+            if (answer.correct) optionButtons[i].style.backgroundColor = "#95fe74";
         });
     }
 
