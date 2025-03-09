@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-white-100">
+    <section class="bg-white p-6 mt-14 w-[90%] max-w-md border border-gray-300 rounded-lg text-left ">
+        <h1 class="text-4xl font-bold mb-10 font-serif text-center" id="Q#">Question 1</h1>
+        <hr class="mb-6 border-t-2 border-black-400">
+        <div id="quiz-container">
+            <h2 class="mb-4 text-gray-600 mt-2 text-lg" id="question">What is the capital of France?</h2>
+            <div class="space-y-2">
+                <button class="w-full bg-white-500 text-black p-2 rounded hover:border-blue-500 border border-gray-300 rounded-lg text-gray-600 mt-2 text-lg" id="A">A) Berlin</button>
+                <button class="w-full bg-white-500 text-black p-2 rounded hover:border-blue-500 border border-gray-300 rounded-lg text-gray-600 mt-2 text-lg" id="B">B) Paris</button>
+                <button class="w-full bg-white-500 text-black p-2 rounded hover:border-blue-500 border border-gray-300 rounded-lg text-gray-600 mt-2 text-lg" id="C">C) Barcalona</button>
+                <button class="w-full bg-white-500 text-black p-2 rounded hover:border-blue-500 border border-gray-300 rounded-lg text-gray-600 mt-2 text-lg" id="D">D) Madrid</button>
+            </div>
+        </div>
+        <div class="mt-6 text-center">
+            <button class="bg-black text-white px-4 py-2 rounded hover:bg-blue-600 text-gray-600 mt-2 text-lg " id="nxt">Next Question</button>
+        </div>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>
