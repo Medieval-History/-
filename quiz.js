@@ -26,6 +26,51 @@ const questions = [
             { text: "Easier to train soldiers", correct: false },
             { text: "Better accuracy", correct: false }
         ]
+    },
+    {
+        question: "Which medieval Japanese weapon was renowned for its sharpness and craftsmanship?",
+        answers: [
+            { text: "Naginata", correct: false },
+            { text: "Katana", correct: true },
+            { text: "Yari", correct: false },
+            { text: "Tanto", correct: false }
+        ]
+    },
+    {
+        question: "What was the primary purpose of a moat surrounding a castle?",
+        answers: [
+            { text: "To provide water for inhabitants", correct: false },
+            { text: "To beautify the landscape", correct: false },
+            { text: "To hinder enemy approach", correct: true },
+            { text: "To store fish for food", correct: false }
+        ]
+    },
+    {
+        question: "Which siege weapon used a counterweight to hurl projectiles over great distances?",
+        answers: [
+            { text: "Ballista", correct: false },
+            { text: "Onager", correct: false },
+            { text: "Trebuchet", correct: true },
+            { text: "Mangonel", correct: false }
+        ]
+    },
+    {
+        question: "What innovation allowed knights to wield lances more effectively during charges?",
+        answers: [
+            { text: "Stirrups", correct: true },
+            { text: "Spurs", correct: false },
+            { text: "Saddles", correct: false },
+            { text: "Reins", correct: false }
+        ]
+    },
+    {
+        question: "Which weapon's introduction led to the decline of heavily armored knights?",
+        answers: [
+            { text: "Crossbow", correct: true },
+            { text: "Longsword", correct: false },
+            { text: "Mace", correct: false },
+            { text: "Halberd", correct: false }
+        ]
     }
 ];
 
@@ -100,7 +145,7 @@ function nextQuestion() {
     if (questionIndex < questions.length) {
         showQuestion();
     } else {
-        questionElement.textContent = "Quiz completed!";
+        questionElement.textContent = "Quiz completed! Your Score: " + score + "/8";
         nextButton.innerHTML = "Restart";
         nextButton.removeEventListener("click", nextQuestion);
         nextButton.addEventListener("click", restart);
